@@ -1,0 +1,144 @@
+list-restaurant,
+detail-restaurant-item,
+.detail-restaurant,
+.description-customerReviews {
+  display: grid;
+  gap: 50px 30px;
+  grid-template-columns: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .text-hero {
+    display: none;
+  }
+  .hero {
+    height: 300px;
+  }
+  .desc {
+    font-size: 14px;
+  }
+  footer-app {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .list-footer {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .list-footer ul {
+    min-height: 100px;
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+  .copyright {
+    width: 100%;
+  }
+  .name-resto {
+    font-size: 20px;
+    margin: 0;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .detail-restaurants {
+    padding: 40px 32px;
+  }
+  
+}
+@media screen and (min-width: 577px) {
+  .menu-button {
+    display: none;
+  }
+  .hero{
+    background: url("./images/hero/hero-image_2-small.jpg") center center/cover no-repeat fixed;
+  }
+
+  .navigation {
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    width: 300px;
+    transform: translateX(0);
+  }
+
+  .navigation .nav-list {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .navigation .nav-list li a {
+    color: #fff;
+  }
+
+  .headline {
+    font-size: 32px;
+  }
+  list-restaurant {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .name-resto a {
+    font-size: 24px;
+  }
+  detail-restaurant-item {
+    padding: 0 32px;
+  }
+
+  .menus {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero{
+    background: url("./images/hero/hero-image_2-large.jpg") center center/cover no-repeat fixed;
+  }
+  .brand h1 {
+    font-size: 2em;
+  }
+  .catalogue-restaurants,
+  .detail-restaurants {
+    padding: 40px 0;
+  }
+
+  .detail-restaurant {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .description-customerReviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .customerReviews {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .review-item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  app-bar,
+  footer-app,
+  detail-restaurant-item {
+    padding: 32px 64px;
+  }
+  list-restaurant {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 32px 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero{
+    background: url("./images/hero/hero-image_2-xl.jpg") center center/cover no-repeat fixed;
+  }
+  list-restaurant {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
